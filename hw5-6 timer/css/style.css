@@ -1,0 +1,64 @@
+
+body{
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+
+
+.timer-output{
+	margin-top: 10px;
+	border: 4px solid #000;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 4px 0px 10px;
+}
+
+.wrapper{
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}
+
+.timer-output .clock{
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: -10px;
+}
+.timer-output .msec{
+	text-align: right;
+	padding-right: 32px;
+}
+
+
+
+.btn-style{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	box-shadow: 0 2px 2px grey;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+.btn-start{
+	background-image: linear-gradient(hsl(101, 100%, 32%), hsl(101, 100%, 22%));
+}
+.btn-start:active{
+	background-image: linear-gradient(hsl(101, 100%, 22%), hsl(101, 100%, 22%));
+}
+
+.btn-clear{
+	background-image: linear-gradient(hsl(0, 100%, 40%), hsl(0, 100%, 30%));
+}
+.btn-clear:active{
+	background-image: linear-gradient(hsl(0, 100%, 30%), hsl(0, 100%, 30%));
+}
+
+.js-btn-pause{
+	background-image: linear-gradient(hsl(237, 96%, 71%), hsl(237, 96%, 61%));
+}
+.js-btn-pause:active{
+	background-image: linear-gradient(hsl(237, 96%, 61%), hsl(237, 96%, 61%));
+}
