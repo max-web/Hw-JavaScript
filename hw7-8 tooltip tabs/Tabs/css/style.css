@@ -1,0 +1,89 @@
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	background-color: #E7ECEA;
+} 
+
+
+
+
+
+
+
+
+/*************************************************
+Вкладки
+*************************************************/
+
+
+.tab {
+	margin: 20px auto;
+	width: 500px;
+	min-height: 100px;
+	position: relative;
+	z-index: 0;
+}
+
+.tab__nav-item {
+	display: inline-block;
+	/*border-top: 1px solid red;*/
+	/*border-right: 1px solid red;*/
+	/*border-left: 1px solid red;*/
+	padding: 5px 10px;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	bottom: -1px;
+	background-color: #2CC185;
+	color: #0D9564;
+	cursor: pointer;
+	margin-right: 5px;
+	border-radius: 0px;
+	transition: all .3s;
+	/*font-weight: bold;*/
+}
+.tab__nav-item:hover{
+	color: white;
+}
+.tab__nav-item:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #E7ECEA; 
+	border-left: 10px solid transparent;
+}
+
+.tab__nav-item--active{
+	background-color: white;
+	color: black;
+	/*font-weight: bold;*/
+	z-index: 2;
+	cursor: default;
+}
+.tab__nav-item--active:hover{
+	color: black;
+}
+
+.tab__content-item {
+	/*border: 1px solid red;*/
+	padding: 10px;
+	height: 100px;
+	width: 500px;
+	/*position: relative;*/
+	position: absolute;
+	top: 41px;
+	background-color: white;
+	z-index:0;
+	border-bottom: 2px solid lightgrey;
+}
+
+.tab__content-item--active{
+	z-index: 1;
+}
