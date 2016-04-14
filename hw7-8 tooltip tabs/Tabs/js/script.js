@@ -1,24 +1,27 @@
 $(document).ready(function() {
 	
+	$tabNav = $('.tab__nav-item');
+	$tabContent = $('.tab__content-item');
 
-	$('.tab__nav-item').on('click', function() {
+
+	$tabNav.on('click', function() {
 		// $itemNumber = $(this).attr('data-item');
-		$itemNumber = $(this).attr('data-item');
+		$itemNumber = $(this).index();
 
 		console.log($itemNumber);
 
 
 		// убираем поставленный ранее класс-метку активного таба
-		$('.tab__nav-item').removeClass('tab__nav-item--active');
+		$tabNav.removeClass('tab__nav-item--active');
 
 		// делаем соотв. таб активным
-		$('.tab__nav-item').eq($itemNumber).addClass('tab__nav-item--active');
+		$tabNav.eq($itemNumber).addClass('tab__nav-item--active');
 
 
 		// убираем поставленный ранее класс-метку активного вклдаки
-		$('.tab__content-item').removeClass('tab__content-item--active');
+		$tabContent.removeClass('tab__content-item--active');
 
 		// делаем соотв. вклдаку активной
-		$('.tab__content-item').eq($itemNumber).addClass('tab__content-item--active');
+		$tabContent.eq($itemNumber).addClass('tab__content-item--active');
 	});
 });

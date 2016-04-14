@@ -43,7 +43,7 @@ body{
 	cursor: pointer;
 	margin-right: 5px;
 	border-radius: 0px;
-	transition: all .3s;
+	/*transition: all .3s;*/
 	/*font-weight: bold;*/
 }
 .tab__nav-item:hover{

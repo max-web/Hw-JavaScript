@@ -1,8 +1,12 @@
 $(document).ready(function() {
-	$('input[type="text"],input[type="password"]').on('mouseover', function() {
+
+	var $elements = $('[data-tooltip]');
+
+
+	$elements.on('mouseover', function() {
 		
 		var tooltipText = $(this).attr('data-tooltip');
-		console.log(tooltipText);
+		// console.log(tooltipText);
 
 
 		$(this).before('<div class="tooltip">' + tooltipText + '</div>');
@@ -10,7 +14,7 @@ $(document).ready(function() {
 	});
 
 
-	$('input[type="text"],input[type="password"]').on('mouseout', function() {
+	$elements.on('mouseout', function() {
 		$('.tooltip').remove();
 	});
 });
