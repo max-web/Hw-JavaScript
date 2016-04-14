@@ -15,6 +15,7 @@ $(document).ready(function() {
 
 
 	$elements.on('mouseout', function() {
+
 		$('.tooltip').remove();
 	});
 });
