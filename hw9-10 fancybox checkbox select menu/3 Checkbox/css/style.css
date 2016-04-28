@@ -1,0 +1,199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Вариант на javaScript
+*************************************************/
+
+
+
+
+form {
+    margin: 50px;
+    background: #99CCFF;
+    padding: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    overflow: hidden;
+}
+.niceChecked {
+    background-position: 0 -17px;
+}
+.niceCheck input {
+    margin-left: -100px; 
+    opacity: 0;
+}
+div {
+    margin-bottom: 10px;
+}
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-disabled.png);
+}
+
+
+/*label ~ input.niceCheck{
+    display: none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Вариант на CSS
+*************************************************/
+
+#css-checkbox input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+#css-checkbox label {
+    cursor: pointer;
+}
+
+#css-checkbox label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+#css-checkbox input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+#css-checkbox label:hover:after {
+    background-position: 0 -34px;
+}
+
+#css-checkbox input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Вариант на js #2
+*************************************************/
+/* iCheck plugin Square skin, blue
+----------------------------------- */
+.icheckbox_square-blue,
+.iradio_square-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-blue {
+    background-position: 0 0;
+}
+    .icheckbox_square-blue.hover {
+        background-position: -24px 0;
+    }
+    .icheckbox_square-blue.checked {
+        background-position: -48px 0;
+    }
+    .icheckbox_square-blue.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-blue.checked.disabled {
+        background-position: -96px 0;
+    }
+
+.iradio_square-blue {
+    background-position: -120px 0;
+}
+    .iradio_square-blue.hover {
+        background-position: -144px 0;
+    }
+    .iradio_square-blue.checked {
+        background-position: -168px 0;
+    }
+    .iradio_square-blue.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+    .iradio_square-blue.checked.disabled {
+        background-position: -216px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_square-blue,
+    .iradio_square-blue {
+        background-image: url(blue@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+
+
+
+#test h1{
+    font-size: 15px;
+    color: grey;
+    color: black;
+}
+#test{
+    background-color: white;
+    margin: 20px auto;
+    width: 600px;
+    box-shadow: 2px 2px 4px grey;
+    padding: 10px 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#test label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+

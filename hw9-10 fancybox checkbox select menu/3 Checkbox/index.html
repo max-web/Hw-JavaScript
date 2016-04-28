@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Checkbox</title>
+	<link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/blue.css" > -->
+
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+<body>
+    
+
+<!-- begin Вариант JavaScript -->
+<form action="#">
+    <h3>Вариант на JavaScript</h3>
+    <div>
+        <label for="ch1">Чекбокс 1</label>
+        <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> 
+    </div>
+    <div>
+        <label for="ch2">Чекбокс 2</label>
+        <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+    </div>
+    <div>
+        <label for="ch3">Чекбокс 3 (заблокирован)</label>
+        <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+    </div>
+</form>
+<!-- end Вариант JavaScript --> 
+  
+<!-- begin Вариант на CSS -->
+<form action="#" id="css-checkbox">
+    <h3>Вариант на CSS </h3>
+    <div>
+        <input type="checkbox" class="" checked="checked" id="css-check1" tabindex="2" value="2" />
+        <label for="css-check1">Чекбокс 1</label>
+    </div>
+    <div>
+        <input type="checkbox" class="" checked="checked" id="css-check2" tabindex="2" value="2" />
+        <label for="css-check2">Чекбокс 2</label>
+    </div>
+    <div>
+        <input type="checkbox" class="" id="css-check3" checked="checked"  />
+        <label for="css-check3">Чекбокс 3</label>
+    </div>
+</form>
+<!-- end Вариант на CSS --> 
+
+
+<!-- begin Еще вариант на JS -->
+<form action="#" id="test">
+    <h2>Еще вариант на JavaScript</h2>
+
+    
+        <label>
+            <input type="checkbox"> Чекбокс 1
+        </label>
+        <label>
+            <input type="checkbox"> Чекбокс 2
+        </label>
+        <label>
+            <input type="checkbox" checked> Чекбокс 3
+        </label>
+        <label>
+            <input type="checkbox" checked disabled> Чекбокс 4
+        </label>    
+
+</form>
+<!-- end Еще вариант на JS --> 
+    
+    
+
+
+
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/select-xiper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/icheck.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $('#test input').iCheck({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue',
+        increaseArea: '20%' // optional
+      });
+    });
+    </script>
+</body>
+</html>

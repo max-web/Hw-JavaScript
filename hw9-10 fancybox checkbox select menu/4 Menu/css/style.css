@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Общие стили 
+*************************************************/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+.clearfix:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/*************************************************
+Меню
+*************************************************/
+.wrapper{
+    background-color: #00a5ff;
+    background-image: linear-gradient(#00a5ff, #1f63ba);
+    box-shadow: 0 2px 4px lightgrey;
+}
+
+.menu {
+}
+.menu__item {
+    float: left;
+    list-style: none;
+
+    position: relative; /*для позиционир. подменю*/
+}
+.menu__link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.menu__link:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+
+
+.submenu {
+    width: 180px;
+    /*display: none;*/
+    
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+
+    display: none;
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 5px lightgrey;
+    /*border: 1px solid #000;*/
+
+    z-index: 100;
+
+}
+.submenu__item {
+    list-style: none;
+    display: block;
+
+    position: relative;
+}
+.submenu__link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #1f63ba;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    margin-bottom: -1px;
+}
+.submenu__link:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+/*подменю 3го уровня и дальше*/
+.submenu .submenu{
+    position: absolute;
+    left:180px; /*ширина submenu: ;*/
+    margin-left: -1px;
+    top:0px;
+}
+
+
+/**/
+.parent{
+    /*background-color: red;*/
+    background-image: url('../img/downArrow.png');
+    background-repeat: no-repeat;
+    background-position: 4px 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Логотип с анимацией
+*************************************************/
+.logo{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#test{
+    /*background-color: #aaa;*/
+}
+
+.logo .fa{
+    font-size: 58px;
+    color: #000;
+}
+
+.rotate{
+    transition: all 1s;
+    transform: rotate(720deg);
+    /*color: red;*/
+}
+
+
+

@@ -1,0 +1,254 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+КОНФИГИ
+*************************************************/
+/*
+
+@media screen and (max-width: ХХХХpx) - точка перехода к моб. версии меню
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Демо декор
+*************************************************/
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+/*************************************************
+Элементы меню 
+(общие стили для неск. элементов - ниже)
+*************************************************/
+
+
+
+/*контейнер*/
+.menu-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+/*кнопка мобильного меню*/
+.toggleMenu {
+    display: none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+
+
+
+/*menu*/
+	.nav {
+	    list-style: none;
+	    *zoom: 1;
+	    background: #175e4c;
+	    position: relative;
+	}
+
+	/*menu - clearfix*/
+	.nav:before,
+	.nav:after {
+	    content: " ";
+	    display: table;
+	}
+	.nav:after {
+	    clear: both;
+	}
+
+
+/*menu item*/
+	.nav > li {
+	    float: left;
+	    border-top: 1px solid #104336;
+	    z-index: 200;
+	}
+
+/*menu link*/
+	.nav > li > a {
+	    display: block;
+	}
+
+
+/*submenu link*/
+	.nav li li a {
+	    display: block;
+	    background: #1d7a62;
+	    position: relative;
+	    z-index: 100;
+	    border-top: 1px solid #175e4c;
+	}
+
+/*submenu-2 link*/
+	.nav li li li a {
+	    background: #249578;
+	    z-index: 200;
+	    border-top: 1px solid #1d7a62;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Общие стили
+*************************************************/
+	/*обнуление отступов*/
+	.nav,
+	ul,
+	li,
+	a {
+	    margin: 0;
+	    padding: 0;
+	}
+
+
+	/*submenu*/
+	.nav ul {
+	    list-style: none;
+	    width: 9em;
+	}
+
+	/*submenu*/
+	.nav li ul {
+	    position: absolute;
+	    left: -9999px;
+	    z-index: 100;
+	}
+
+
+	/*link - обнуление подчеркивания*/
+	a {
+	    text-decoration: none;
+	}
+
+	/*link*/
+	.nav a {
+	    padding: 10px 15px;
+	    color: #fff;
+	    *zoom: 1;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Эффекты при наведении
+
+не на :hover, а на добавлении класса .hover по jq
+*************************************************/
+
+/*item*/
+	.nav li {
+		position: relative;
+	}
+
+/*menu item*/
+	.nav > li.hover > ul {
+		left: 0;
+	}
+
+/*submenu item*/
+	.nav li li.hover ul {
+		left: 100%;
+		top: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Стили для мобильников
+*************************************************/
+
+/*конфиг - точка для моб. версии меню*/
+@media screen and (max-width: 800px) {
+
+/*menu item - убрали выстраивание в линию*/
+    .nav > li {
+        float: none;
+    }
+
+/*submenu - сделали d:b*/
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+
+/*submenu - убрали pos:abs*/
+    .nav > li.hover > ul,
+    .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
