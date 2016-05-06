@@ -7,9 +7,9 @@ $(document).ready(function() {
 
 
 
-	$link = $('.menu li');
-	$parent = $('.menu ul').prev(); 
-	$logo = $('.logo .fa');
+	var $link = $('.menu li');
+	var $parent = $('.menu ul').prev(); 
+	var $logo = $('.logo .fa');
 
 	// добавляет ментку для пуктнов с подпунтами
 	$parent.addClass('parent');
