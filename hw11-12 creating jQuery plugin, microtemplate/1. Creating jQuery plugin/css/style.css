@@ -1,0 +1,104 @@
+body{
+	background-image: url(../img/bg.png);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Изображения в списке, подписи, обертка
+*************************************************/
+
+
+.carousel-list {
+	list-style: none;
+
+	width: 10000px; /*изображения в одну строку*/
+	padding: 0px;
+
+	position: relative;/*чтоб изображения можно было сдвигать*/
+}
+.carousel-element {
+	display: block;
+	margin-right: 25px;
+	float: left;
+	background-color: white;
+	text-align: center;
+	border: 1px solid lightgrey;
+	border-bottom: 2px solid lightgrey;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.carousel-element img{
+	max-width: 100px
+}
+
+.carousel-element p{
+	margin: 5px 0px;
+	font-size: 14px
+}
+
+.carousel-hider{ /*обертка изображений - скрывает остальные, показывая часть как через прорезь*/
+	width: 610px;
+	overflow: hidden;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Кнопки управления
+*************************************************/
+
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+    /*color: white;*/
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}

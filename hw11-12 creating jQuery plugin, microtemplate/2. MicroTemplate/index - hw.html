@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шаблонизатор</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+
+
+    
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/micro-template-by-John-Resing.js"></script>
+<script src="js/script.js"></script>
+
+
+    <script type="text/template" id="test">
+	<table>
+		<tr>
+			<th>Имя</th>
+			<th>Страна</th>
+			<th>Очки</th>
+		</tr>
+
+        <% for (var i=0; i<data.length; i++){ %>
+        <tr>
+            <td><%= data[i].name %></td>
+            <td><%= data[i].country %></td>
+            <td><%= data[i].score %></td>
+        </tr>
+		<% }; %>
+    </table>
+
+
+    </script>
+<!--     <% for (var i=0; i<data.length; i++){ %>
+        <h1><%= data[i].title %></h1>
+        <p><%= data[i].cont %></p>
+    <% }; %> -->
+
+</body>
+</html>
