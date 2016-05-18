@@ -1,0 +1,11 @@
+
+
+main{
+	height: 300px;
+	border: 2px solid grey;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
