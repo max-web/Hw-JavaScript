@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+body .test {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.test2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
