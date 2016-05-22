@@ -1,0 +1,19 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "phantomjs": "^2.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

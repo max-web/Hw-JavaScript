@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Возведение в степень</title>
+</head>
+<body>
+
+
+<!-- ДЗ1 
+    функция обрабатывает целые положительны и отрицательные числа, ноль
+    При вводе текста выдает уведомление "Ошибка во введенных значениях"
+-->
+
+<script>
+    var number = +prompt ('Введите число', ''); 
+    var degree = +prompt ('Введите степень', '');   
+    alert('Ответ: '+calculateDegree(number, degree));
+
+    function calculateDegree(number, degree){
+
+
+        var result;
+
+        // степень больше нуля
+        if (degree > 0){
+            result = number;
+            for (var i = 1; i<degree; i++){
+                result = result * number;
+            }
+
+        // степень равна нулю
+        } else if (degree === 0){
+            result = 1;
+        }
+
+        // степень отрицательная
+        else if (degree < 0){ //a^-n = 1 / a^n
+
+            result = number;
+            var n = -degree;
+
+            for (var j = 1; j < n; j++){
+                result = result * number;
+            }
+
+            result = 1 / result;
+
+        }
+
+        if (isNaN(result)){
+            result = "Ошибка во введенных значениях";
+        }
+
+
+        return result;
+    }
+
+</script>
+
+
+</body>
+</html>

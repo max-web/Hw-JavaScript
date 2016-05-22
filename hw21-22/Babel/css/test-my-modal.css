@@ -1,0 +1,64 @@
+
+/*************************************************
+Модальное окно
+*************************************************/
+.modal-overlay{
+	
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	z-index:1000; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	
+	background-color:#000; /* чернaя */
+	opacity:0.4; /* нo немнoгo прoзрaчнa */
+	cursor:pointer;
+	
+	/*по умолчанию скрыто*/
+	/*display:none; */
+}
+
+
+
+.my-modal{
+	
+	position: fixed;
+	z-index: 1050;
+	
+	width: 600px;
+	top:100px;
+	left:50%;
+	margin-left: -300px;
+
+	box-sizing: border-box;
+	padding: 25px;
+	
+	background-color: white;
+	border: 1px solid grey;
+	box-shadow: 3px 3px 6px #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+	/*display: none;*/
+}
+
+.my-modal .close{
+	box-sizing: content-box;
+	background-color: white;
+	border-radius: 40px;
+	border: 3px solid #555;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.my-modal .close:hover{
+	background-color: #555;
+	color: white;
+	cursor: pointer;
+}
+

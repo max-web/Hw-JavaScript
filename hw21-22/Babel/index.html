@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>дз21-22</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+
+	<!-- модальное окно -->
+	<div id="modal-overlay" ></div>
+	<div id="modal-1" class="my-modal">
+		<div class="close">x</div>
+		Результат:
+		<div class="modal-text"></div>
+	</div>
+
+
+	<!-- шаблон для шаблонизатора -->
+    <script type="text/template" id="test-template">
+
+		<form class="wrapper">
+
+			<h1><%= data[0] %></h1>
+			
+			<% for (var i=1; i<data.length; i++){ %>
+			<h2 class="qwestion"><%= data[i].qwestion %></h2>
+			<div class="answers">
+				<label><input type="checkbox"><%= data[i].answer1 %></label>
+				<label><input type="checkbox" ><%= data[i].answer2 %></label>
+				<label><input type="checkbox" ><%= data[i].answer3 %></label>
+				<div class="answerCorrect"><%= data[i].asswerCorrect %></div>
+			</div>
+			<% }; %>
+
+			<input type="submit" value="Проверить мои результаты" class="btn-submit" id="#start-modal-1">
+		</form>
+    </script>
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/micro-template-by-John-Resing.js"></script>
+	<!-- <script src="js/my-modal.js"></script> -->
+	<script src="js/dest/script.js"></script>  
+
+</body>
+</html>
