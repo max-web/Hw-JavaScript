@@ -1,0 +1,84 @@
+/*************************************************
+Глобальные стили
+*************************************************/
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+/*************************************************
+Интерфейс
+*************************************************/
+
+.wrapper {
+    margin: 20px auto;
+    width: 600px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.controlls input[type=text] {
+    width: 80%;
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    margin-right: 0px;
+    box-sizing: border-box;
+}
+
+.controlls button {
+    width: 20%;
+    border: grey;
+    height: 37px;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    text-shadow: 0 1px 1px white;
+    cursor: pointer;
+    outline: none;
+}
+
+.controlls button:active {
+    box-shadow: none;
+    background-image: linear-gradient(to bottom, #ddd, #ddd);
+}
+
+.item-list {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    list-style: none
+}
+
+.item-text {
+    padding: 10px 50px 10px 20px;
+    border: 1px solid lightgrey;
+    margin-bottom: -1px;
+}
+
+.item-text:first-child {
+    border-top: none;
+}
+
+.item-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.item-edit {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.item:hover .item-delete,
+.item:hover .item-edit {
+    display: block;
+}

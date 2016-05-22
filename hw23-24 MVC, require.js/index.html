@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW23-24</title>
+    
+    <script data-main="js/script.js" src="js/lib/require.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<!-- шаблон "обертки" -->
+<script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+        <div class="controlls">
+            <input type="text" class="item-value" placeholder="Что должно быть сделано?"><button class="item-add">Добавить</button>
+        </div>
+        <ul class="item-list"></ul>
+    </div>
+</script>
+
+
+<!-- шаблон списка -->
+<script type="text/template" id="list-template">
+    <% for(var i = 0; i < data.length; i++){ %>
+        <li class="item">
+            <div class="item-text">
+                <%= data[i] %>
+                <span data-value="<%= data[i] %>" class="item-delete">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <span data-value="<%= data[i] %>" class="item-edit">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </span>
+            </div>
+        </li>
+    <% }; %>
+
+</script>
+
+
+
+</body>
+</html>
