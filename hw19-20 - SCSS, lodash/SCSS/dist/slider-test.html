@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slider</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- begin Slider -->
+	<div class="container">
+		
+		<div class="slider cycle-slideshow" 
+			data-cycle-fx="scrollHorz"
+			data-cycle-speed="300"
+			data-cycle-timeout="15000" 
+
+			data-cycle-pager-event="mouseover"
+			data-cycle-slides="> .slider__item"
+
+		>
+			
+			<!-- пагинация к слайдам -->
+			<div class="cycle-pager"></div> 
+			
+			<!-- слайды и подписи к ним -->
+			<div class="slider__item">
+				<img src="img/slider-image.jpg" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+			<div class="slider__item">
+				<img src="img/slider-image.jpg" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+			<div class="slider__item">
+				<img src="img/slider-image.jpg" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+
+
+
+		</div>
+
+	</div><!-- /.container -->
+	<!-- end Slider --> 
+	
+	
+	<script src="js/libs/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ДЗ. SCSS</title>
+	<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"></link> -->
+	
+	<!-- css для отладки -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- css по умолчанию (для build) -->
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+	<!-- шрифты -->
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+	<div class="top-bg">
+		
+	
+	<!-- ДОБАВИТЬ КОНТЕЙНЕРЫ В КАЖДЫЙ БЛОК -->
+
+
+	
+
+
+
+
+
+	<!-- begin Header -->
+	<div class="header">
+		<div class="container">
+			
+			<div class="header__top-line clearfix">
+				<div class="header__logo">
+					<img src="img/logo.png" alt="logo" class="header__logo-img">
+				</div>
+				<div class="header__links">
+					<div class="header__links-item header__links-item--fb"></div>
+					<div class="header__links-item header__links-item--tw"></div>
+					<div class="header__links-item header__links-item--rss"></div>
+					<div class="header__links-item header__links-item--instagr"></div>
+					<div class="header__links-item header__links-item--skype"></div>
+				</div>
+			</div><!-- /.header__top-line -->
+
+			<div class="header__menu-wrapper clearfix">
+				<ul class="header__menu">
+					<li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link-active">Home</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Features</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Services</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">News</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Shop</a></li>
+				</ul>
+				<div class="header__search-wraper">
+					<input type="text" class="header__search-input" placeholder="Search...">
+					<img src="img/input-search.png" alt="" class="header__search-icon">
+				</div>
+			</div><!-- /.header__menu-wrapper -->
+
+		</div><!-- /.container -->
+	</div>
+	<!-- end Header --> 
+
+
+
+
+
+
+
+	<!-- begin Slider -->
+	<div class="container">
+		
+		<div class="slider cycle-slideshow" 
+			data-cycle-fx="scrollHorz"
+			data-cycle-speed="300"
+			data-cycle-timeout="5000" 
+
+			data-cycle-pager-event="mouseover"
+			data-cycle-slides="> .slider__item"
+
+		>
+			
+			<!-- пагинация к слайдам -->
+			<div class="cycle-pager"></div> 
+			
+			<!-- слайды и подписи к ним -->
+			<div class="slider__item">
+				<img src="img/slider-image.png" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+			<div class="slider__item">
+				<img src="img/slider-image.png" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+			<div class="slider__item">
+				<img src="img/slider-image.png" alt="" class="slider__item-img">
+				<div class="slider__item-descr"></div>
+			</div>
+
+
+
+		</div>
+
+	</div><!-- /.container -->
+	<!-- end Slider --> 
+
+
+
+
+
+
+	<!-- begin Promo-text -->
+	<div class="promo-text">
+		<div class="container">
+			
+
+			<div class="promo-text__item">
+				<img src="img/feature-01.png" alt="" class="promo-text__item-number">
+				<img src="img/feature-01-settings.png" alt="" class="promo-text__item-icon">
+				<div class="promo-text__item-header">Power Inside</div>
+				<div class="promo-text__item-descr">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
+				<a href="#" class="promo-text__item-more-link">Reed More</a>
+			</div>
+		
+			<div class="promo-text__item">
+				<img src="img/feature-02.png" alt="" class="promo-text__item-number">
+				<img src="img/feature-02-icon-params.png" alt="" class="promo-text__item-icon">
+				<div class="promo-text__item-header">New Technologies</div>
+				<div class="promo-text__item-descr">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
+				<a href="#" class="promo-text__item-more-link">Reed More</a>
+			</div>
+		
+			<div class="promo-text__item">
+				<img src="img/feature-03.png" alt="" class="promo-text__item-number">
+				<img src="img/feature-03-icon.png" alt="" class="promo-text__item-icon">
+				<div class="promo-text__item-header">Fast Support</div>
+				<div class="promo-text__item-descr">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
+				<a href="#" class="promo-text__item-more-link">Reed More</a>
+			</div>
+
+		</div><!-- /.container -->
+
+	
+	</div>
+	<!-- end Promo-text --> 
+
+
+	</div><!-- /.top-bg -->
+
+	
+
+
+
+
+
+	<!-- begin Services -->
+	<div class="services">
+		<div class="container">
+			
+			<div class="services__header">Our Services</div>
+			
+			<a href="#" class="services__item">
+				<div class="services__item-img-wrapper">
+					<img src="img/services-1.jpg" alt="" class="services__item-img">
+					<div class="services__item-img-hover"></div>		
+				</div>
+				<div class="services__item-descr">Schedule Services</div>
+			</a>
+			
+			<a href="#" class="services__item">
+				<div class="services__item-img-wrapper">
+					<img src="img/services-2.jpg" alt="" class="services__item-img">
+					<div class="services__item-img-hover"></div>		
+				</div>
+				<div class="services__item-descr">Preventive Maintence</div>
+			</a>
+			
+			<a href="#" class="services__item">
+				<div class="services__item-img-wrapper">
+					<img src="img/services-3.jpg" alt="" class="services__item-img">
+					<div class="services__item-img-hover"></div>		
+				</div>
+				<div class="services__item-descr">Tire & Wheel Services</div>
+			</a>
+			
+			<a href="#" class="services__item">
+				<div class="services__item-img-wrapper">
+					<img src="img/services-4.jpg" alt="" class="services__item-img">
+					<div class="services__item-img-hover"></div>		
+				</div>
+				<div class="services__item-descr">Repair Services</div>
+			</a>
+		
+
+		</div><!-- /.container -->
+	</div>
+	<!-- end Services --> 
+	
+
+
+
+
+
+
+	<!-- begin news-and-banner -->
+	<div class="news-and-banner">
+		<div class="container clearfix">
+
+			<div class="news">
+				<div class="news__header">Latest News</div>
+
+				<div class="news__item">
+					<img src="img/news-1.jpg" alt="" class="news__item-img">
+					<div class="news__item-date-month">Jan</div>
+					<div class="news__item-date-day">23</div>
+					<a href="" class="news__item-header">Advanced Machinery Helps Improve Quality</a>
+					<div class="news__item-subheader">
+						<span class="news__item-subheader-author">by <a href="#" class="news__item-subheader-link">cmsmasters</a></span>
+						<span class="news__item-subheader-comments">Comments (<a href="" class="news__item-subheader-link">6</a>)</span>
+					</div>
+					<div class="news__item-descr">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+				</div>
+				
+				<div class="news__item">
+					<img src="img/news-2.jpg" alt="" class="news__item-img">
+					<div class="news__item-date-month">Jan</div>
+					<div class="news__item-date-day">21</div>
+					<a href="" class="news__item-header">Powerful Techniques for Advanced Service</a>
+					<div class="news__item-subheader">
+						<span class="news__item-subheader-author">by <a href="#" class="news__item-subheader-link">cmsmasters</a></span>
+						<span class="news__item-subheader-comments">Comments (<a href="" class="news__item-subheader-link">3</a>)</span>
+					</div>
+					<div class="news__item-descr">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+				</div>
+			</div><!-- /.news -->
+			
+
+			<div class="banners">
+			    <div class="banners__header">Banners Place</div>
+			    <div class="accordeon">
+			        
+			
+			        <div class="accordeon__header accordeon__header--active">
+			            <div class="accordeon__header-indicator accordeon__header-indicator--active">+</div>
+			            <div class="accordeon__header-text accordeon__header-text--active">Accordion Panel 1</div>
+			        </div>
+			        <div class="accordeon__text accordeon__text--active">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+			        
+			
+			        <div class="accordeon__header">
+			            <div class="accordeon__header-indicator">-</div>
+			            <div class="accordeon__header-text">Accordion Panel 2</div>
+			        </div>
+			        <div class="accordeon__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+			        
+			
+			        <div class="accordeon__header">
+			            <div class="accordeon__header-indicator">-</div>
+			            <div class="accordeon__header-text">Accordion Panel 3</div>
+			        </div>
+			        <div class="accordeon__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+			        
+			
+			        <div class="accordeon__header">
+			            <div class="accordeon__header-indicator">-</div>
+			            <div class="accordeon__header-text">Accordion Panel 4</div>
+			        </div>
+			        <div class="accordeon__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+			    </div>
+			</div><!-- /. banners -->
+
+		</div><!-- /.container -->
+	</div>
+	<!-- end news-and-banner --> 
+
+
+
+
+
+
+	<!-- begin Clients-logo -->
+	<div class="clients-logo">
+		<div class="container clearfix">
+			<div class="clients-log__item"><img src="img/logo-1.png" alt="" class="clients-log__item-img"></div>
+			<div class="clients-log__item"><img src="img/logo-2.png" alt="" class="clients-log__item-img"></div>
+			<div class="clients-log__item"><img src="img/logo-3.png" alt="" class="clients-log__item-img"></div>
+			<div class="clients-log__item"><img src="img/logo-4.png" alt="" class="clients-log__item-img"></div>
+			<div class="clients-log__item"><img src="img/logo-5.png" alt="" class="clients-log__item-img"></div>
+			<div class="clients-log__item"><img src="img/logo-6.png" alt="" class="clients-log__item-img"></div>
+		</div><!-- /.container -->
+	</div>
+	<!-- end Clients-logo --> 
+
+	
+
+
+
+
+
+
+	<!-- begin footer -->
+	<div class="footer">
+
+		<div class="footer__bg-menu">
+			<div class="container">
+			<ul class="menu-footer">
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Socials</a>
+					<ul class="submenu-footer">
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Facebook</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Flickr</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Twitter</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Vimeo</a></li>
+					</ul>
+				</li>
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Links</a>
+					<ul class="submenu-footer">
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">How to Write a Blog</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Create a Blog in 4 Steps</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">15 Tips to Increase Traffic</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">20 Blog Post Ideas</a></li>
+					</ul>
+				</li>
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">Blogroll</a>
+					<ul class="submenu-footer">
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Blogs Blog</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Roll Up Roll Up</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Blog Free</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Wordpress Blog</a></li>
+					</ul>
+				</li>
+				<li class="menu-footer__item">
+					<a href="" class="menu-footer__link">About us</a>
+					<ul class="submenu-footer">
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Agriculture</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Harvest</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Company news</a></li>
+						<li class="submenu-footer__item"><a href="" class="submenu-footer__link">Investor relations</a></li>
+					</ul>
+				</li>
+			</ul><!-- /.menu-footer -->
+			</div><!-- /.container -->
+		</div><!-- /.footer__bg-menu -->
+
+		<div class="footer__bg-contact">
+		<div class="container">
+			<div class="footer__copyright">
+				&copy;2014 Build Home
+			</div>
+
+			<div class="footer__contact">
+				<div class="footer__contact-item">
+					<img src="img/footer-icon-map.png" alt="" class="footer__contact-icon">
+					<div class="footer__contact-text">BuildHomeLtd.  Street Name 123   23 45 Cityname</div>
+				</div>
+				<div class="footer__contact-item">
+					<img src="img/footer-icon-phone.png" alt="" class="footer__contact-icon">
+					<div class="footer__contact-text">+123 900 123 456</div>
+				</div>
+				<div class="footer__contact-item">
+					<img src="img/footer-icon-mail.png" alt="" class="footer__contact-icon">
+					<div class="footer__contact-text">info@buildhome.web</div>
+				</div>
+			</div><!-- /.footer__contact -->
+
+		</div><!-- /.container -->
+
+		</div><!-- /.footer__bg-contact -->
+	</div>
+	<!-- end footer --> 
+
+
+
+
+
+	<script src="js/libs/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+
+
+</body>
+</html>
