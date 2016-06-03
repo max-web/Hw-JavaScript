@@ -1,0 +1,373 @@
+
+
+@media screen and (min-width: 940px) {
+
+
+
+
+
+
+/*************************************************
+Header
+*************************************************/
+
+
+.header-bg {
+	height: 700px;
+	background-position: 50% -22px;
+	padding-top: 15px;
+	background-size: auto auto;;
+}
+
+
+.header {
+	&__container {
+		width: 940px;
+		margin: 0 auto;
+		font-size: 0;
+		margin-bottom: 136px;
+	}
+
+	&__entry {
+		width: 50%;
+		position: relative;
+		left:50%;
+
+		display: inline-block;
+		text-align: right;
+		padding-right: 0px;
+		top: -5px; 
+	}
+	&__entry-login {
+	}
+	&__enrty-signup {
+	}
+	&__logo-wrapper {
+		width: 50%;
+		position: relative;
+		right:50%;
+
+		text-align: left;
+		padding-left: 0px;
+		padding-top: 9px;
+
+		display: inline-block;
+		margin: auto;
+	}
+	&__logo-img {
+	}
+}
+
+
+.promo-text {
+	&__header {
+		font-size: 52px;
+		margin-bottom: 29px;
+		line-height: 62px;
+		// color: blue;
+		// background-color: ;
+	}
+	&__subheader {
+		width: 100%;	
+		font-size: 27px;
+		margin-bottom: 38px;
+	}
+	&__btn-cta {
+		width: 222px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+How we works
+*************************************************/
+
+.how-works {
+	&__header {
+		margin-top: 74px;
+		margin-bottom: 37px;
+	}
+	&__container{
+		width: 960px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+.slider {
+		float: left;
+		width: 31.25%; /*300/960*/
+		position: relative;
+		margin: 0 10px;
+		height: 400px;
+
+	&__slide {
+		margin: 0;
+	}
+	&__slide-img {
+
+		height: 400px;
+		border-radius: 4px;
+		&--bg-step1 {
+			background-image: url(../img/slider-lg-1.jpg);
+		}
+		&--bg-step2 {
+			background-image: url(../img/slider-lg-2.jpg);
+		}
+		&--bg-step3 {
+			background-image: url(../img/slider-lg-3.jpg);
+		}
+	}
+	&__slide-descr-wrapper {
+		padding: 20px 19px 20px 20px;
+		&--pixelperf{
+		}
+	}
+	&__slide-step {
+	}
+	&__slide-header {
+	}
+	&__slide-subheader {
+	}
+}
+.cycle-slideshow {
+}
+
+
+.cycle-prev {
+	position: absolute;
+	background-image: url('../img/slider-btn-left.png');
+	top: 153px;
+	left: 21px;
+	width: 30px;
+	height: 55px;
+	z-index: 1000;
+	cursor: pointer;
+}
+.cycle-next {
+	position: absolute;
+	background-image: url('../img/slider-btn-right.png');
+	top: 153px;
+	right: 21px;
+	width: 30px;
+	height: 55px;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Partners examples
+*************************************************/
+.partners {
+	&__container {	
+		width: 940px;
+		margin: 0 auto;
+		
+		/*clearfix*/
+		display: table;
+		content: '';
+		clear:both;
+	}
+	&__header {
+		margin-top: 96px;
+		margin-bottom: 3px;
+	}
+	&__item {
+		height: 263px;
+		width: 25%;
+		float: left;
+		padding: 0 10px;
+	}
+	&__item-img {
+	}
+	&__item-header {
+	}
+	&__item-descr {
+	}
+	&__btn {
+		margin-top: 39px;
+	    width: 190px;
+	    line-height: 36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Activity ideas
+*************************************************/
+.ideas{
+	&__header{
+		margin-top: 57px;
+		margin-bottom: 34px;
+	}
+	&__container {
+		width: 968px;
+	}
+	&__item {
+		width: 31%;
+		/*margin: 0;*/
+		margin-left: 11px;
+		margin-right: 11px;
+		margin-bottom: 15px;
+	}
+	&__item-descr {
+	}
+	&__item-overlay {
+		height: 98.9%;
+	}
+	&__item-img {
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Search partner
+*************************************************/
+.search {
+	text-align: center;
+	padding-bottom: 59px;
+
+	&__header {
+		margin-top: 76px;
+		margin-bottom: 34px;
+	}
+	&__descr {
+		margin-bottom: 38px;
+		font-size: 20.5px;
+	}
+	&__input {
+		display: inline-block;
+		width: 240px;
+		margin-right: 4px;
+		// position: relative;
+		// top: -1px;
+		// left: -2px;
+
+
+		font-size: 16px;
+	}
+	&__btn {
+		display: inline-block;
+		width: 160px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Footer
+*************************************************/
+.footer {
+	padding-top: 38px;
+	padding-bottom: 40px;
+
+	&__container{
+		max-width: 940px;
+		margin: 0 auto;
+	}
+
+
+	&__logo {
+		float: left;
+		width: 25.53%; /*240/940*/
+		margin: 0;
+		text-align: left;
+	}
+	&__logo-img {
+	}
+
+
+
+
+	&__menu {
+		float: left;
+		width: 34.04%; /*320/940*/
+	}
+	&__menu-item {
+		float: left;
+		width: 50%;
+
+	}
+	&__menu-link {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	&__submenu {
+	}
+	&__submenu-item {
+		display: block;
+	}
+	&__submenu-link {
+		text-align: left;
+	}
+
+
+
+	&__copyright {
+		float: left;
+		width: 40.42%; /*380/940*/
+		text-align: right;
+	}
+	&__copyright-text {
+		text-align: right;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	&__copyright-logo {
+		text-align: right;
+		display: inline;
+	}
+
+
+	
+}
+
+
+
+
+
+} /*end @media*/

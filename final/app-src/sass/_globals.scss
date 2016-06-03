@@ -1,0 +1,62 @@
+/*************************************************
+Variables
+*************************************************/
+$color-bg-dark: #2a2d32;
+$color-bg-white: #fff;
+$color-bg-dark-lighter: #34373c;
+$color-blue: #248cec;
+$color-gold: #f4b60d;
+
+$color-font-dark: #2a2b2e;
+$color-font-blue: $color-blue;
+
+
+$font-montserrat:'Montserrat', Arial, "Helvetica Neue", Helvetica,sans-serif;
+$font-roboto: 'Roboto', Arial, "Helvetica Neue", Helvetica,sans-serif;
+@charset "UTF-8";
+
+
+
+
+/*************************************************
+Глобальные стили
+*************************************************/
+
+.clearfix{
+	display: table;
+	content: '';
+	clear:both;
+}
+
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+@media screen and (min-width: 748px) and (max-width: 939px) {
+	.container{
+		width: 748px;
+	}
+
+}
+@media screen and (min-width: 940px) {
+	.container{
+		width: 940px;
+		box-sizing: border-box;
+	}
+}
+
+
+
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1;
+}
